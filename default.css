@@ -6,7 +6,7 @@
 /*declaring the font*/
 @font-face {
     font-family: "shineon";
-    src: url(./Shineon-n8X1.ttf);
+    src: url(../../tictactoe.github.io/Shineon-n8X1.ttf);
 }
 html{
     background-color: black;
