@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TicTacToe❌⭕#️⃣</title>
+    <title>TICTACTOE❌⭕</title>
     <link rel="stylesheet" href="./default.css">
-    <script src = "./app.js" defer></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
-    <div class="mainContainer">
-        <section class="mainMenu visible">
-            <div>TicTacToe</div>
-            <div><button class = "button">Start►</button></div> 
+    <section class="mainContainer">
+        <section class="mainMenu">
+            <p> ANOTHER TICTACTOE GAME</p>
+            <button id = "start_button">START►</button>
         </section>
-      
-        <!--this section is hidden until we start the game-->
-        <section class="gameSection hidden">
-            <div><button class = "button" id = "endGameButton">◄End game</button></div>
-            <div class="currentPlayer">Current player:</div>
-            <!--create a 3x3 grid-->
+        <section class = "gameSection hidden">
+            <button id= "endGame_button">◄End Game</button>
+            <span class="displayText orangeColor">Current Player</span>
             <div class="grid">
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
-                <div><button class="gridElement"></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
+                <div class="gridItem"><button></button></div>
             </div>
-            <div class="announcer"></div>
         </section>
-    </div>
+    </section>
+    <div class="credits"></div>
 </body>
 </html>
