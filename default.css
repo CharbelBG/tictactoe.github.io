@@ -1,0 +1,82 @@
+/*css reset*/
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+/*templates*/
+.button{
+    padding:10px;
+    font-size:3vw;
+}
+/*utility*/
+.hidden{
+    visibility: collapse;
+    position: absolute;
+}
+.visible{
+    visibility: visible;
+    position: inherit;
+}
+
+
+
+.currentPlayer{
+    margin-top: 50px;
+    font-size: 10vw;
+    float:left;
+}
+.gameSection{
+    width:95%;
+    height: fit-content;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    height: fit-content;
+    gap:20px;
+}
+.grid div{ /*the container of buttons*/
+    border:2px solid black;
+    height:100%;
+}
+.gridElement{ /*the button*/
+    height:100%;
+    width: 100%;
+}
+
+#endGameButton{
+    position: absolute;
+    top:15px;
+    left:20px;
+}
+
+.mainMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainMenu div:first-of-type:hover{
+    color:red; /*add animation with keyframes*/
+}
+.mainContainer{
+    margin:10px;
+    font-family:'Colonna MT';
+    font-size: 15vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    outline: 1px solid black;
+    border-radius:10px;
+    height: fit-content;
+}
+.announcer{
+    font-size: 10vw;
+}
+
+@media screen and (max-width:600px) {
+    .mainContainer{
+        font-family:'Colonna MT';
+    }
+    
+}

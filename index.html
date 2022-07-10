@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe❌⭕#️⃣</title>
+    <link rel="stylesheet" href="./default.css">
+    <script src = "./app.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <section class="mainMenu visible">
+            <div>TicTacToe</div>
+            <div><button class = "button">Start►</button></div> 
+        </section>
+      
+        <!--this section is hidden until we start the game-->
+        <section class="gameSection hidden">
+            <div><button class = "button" id = "endGameButton">◄End game</button></div>
+            <div class="currentPlayer">Current player:</div>
+            <!--create a 3x3 grid-->
+            <div class="grid">
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+                <div><button class="gridElement"></button></div>
+            </div>
+            <div class="announcer"></div>
+        </section>
+    </div>
+</body>
+</html>
